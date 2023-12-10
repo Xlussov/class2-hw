@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>JS OOP</title>
+</head>
+<body>
+  <div class="container">
+    <div id="userStatisticBlock">
+      <div class="cardUser">
+        <div class="tableList"></div>
+      </div>
+    </div>
+    <div class="regestration">
+      <div class="card allRegist">
+        <h2>Регестрація</h2>
+        <input type="text" class="user-name" id="userName" placeholder="Ім'я">
+        <input type="number" class="user-age" id="userAge" placeholder="Вік">
+        <input type="date" class="user-bir" id='userBir' onfocus="(this.type='date')" onblur="if (!this.value)this.type='text'" placeholder="Дата народження">
+        <input type="text" class="user-city" id="userCity" placeholder="Місце проживання">
+        <select name="userWork" id="userWork">
+          <option value="none" disabled selected>Виберіть професію</option>
+          <option value="driver">Водій</option>
+          <option value="doctor">Доктор</option>
+          <option value="teacher">Вчитель</option>
+          <option value="salesperson">Продавець</option>
+        </select>
+        <div class="buttons">
+          <button id="registerUserFirstData">Далі</button>
+          <button id="seeIsersStatustic">Статистика користувачів</button>
+        </div>
+      </div>
+    </div>
+    <div class="regestrations">
+      <div class="card driver dotRegist">
+        <h2>Ви Водій</h2>
+        <input type="text" placeholder="Водій якої машини ?" id="valueCar">
+        <input type="text" placeholder="Чи є страховка ?" id="save">
+        <input type="number" placeholder="Досвід водіння (у роках)" id="go">
+        <input type="text" placeholder="Автомат / Механіка" id="typeCar">
+        <button id="registerUserSecondData">Регестрація</button>
+      </div>
+      <div class="card doctor dotRegist">
+        <h2>Ви Доктор</h2>
+        <input id="specions" type="text" placeholder="Ваша спеціальність ?">
+        <input id="helpfuls" type="number" placeholder="Скількома паціентам допомогли ?">
+        <input id="go1" type="number" placeholder="Досвід роботи (у роках)">
+        <input id="privat" type="text" placeholder="Ви працюете у часній больниці ?">
+        <button id="registerUserSecondData">Регестрація</button>
+      </div>
+      <div class="card teacher dotRegist">
+        <h2>Ви Вчетель</h2>
+        <input id="subject" type="text" placeholder="Вчитель якого предмету ?">
+        <input id="classes" type="text" placeholder="Які класи ви навчаете? (молодші / старші)">
+        <input id="go2" type="number" placeholder="Досвід роботи (у роках)">
+        <input id="exp" type="text" placeholder="Ваш рівень знань ?">
+        <button id="registerUserSecondData">Регестрація</button>
+      </div>
+      <div class="card salesperson dotRegist">
+        <h2>Ви Продавець</h2>
+        <input id="sfear" type="text" placeholder="У якій сфері ?">
+        <input id="jobExp" type="text" placeholder="Ви займеєте вищу довжність ?">
+        <input id="go3" type="number" placeholder="Досвід роботи (у роках) ?">
+        <input id="education" type="text" placeholder="Ви маєте вищу освіту?">
+        <button id="registerUserSecondData">Регестрація</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

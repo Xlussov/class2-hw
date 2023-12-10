@@ -1,0 +1,95 @@
+body{
+   background-color: coral;
+   padding: 20px;
+}
+.container {
+   display: block;
+   width: 1240px;
+   margin: 0 auto;
+   box-sizing: border-box;
+}
+
+h2 {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.regestration, .regestrations, .userStatisticBlock {
+   display: flex;
+   justify-content: center;
+}
+
+.card {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+   background-color: white;
+   padding: 20px 20px 35px;
+   border-radius: 20px;
+   width: 400px;
+}
+
+input, select {
+   border-radius: 20px;
+   background-color: aliceblue;
+   border: none;
+   padding: 15px 10px;
+   width: 300px;
+   margin-bottom: 15px;
+}
+
+button {
+   border-radius: 20px;
+   background-color: rgb(255, 150, 111);
+   border: none;
+   padding: 15px 10px;
+   width: 130px;
+   margin-bottom: 15px;
+   color: white;
+   margin: 10px;
+}
+
+select{
+   width: 320px;
+}
+
+input:focus, select:focus {
+   outline: none;
+   border: 2px solid rgb(244, 249, 253);
+}
+
+.dotRegist {
+   display: none;
+}
+
+#userStatisticBlock {
+   display: none;
+   justify-content: center;
+}
+
+.cardUser {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-around;
+   background-color: white;
+   padding: 20px 20px 35px;
+   border-radius: 20px;
+   width: 1200px;
+}
+
+table, tr, td {
+   border-collapse: collapse;
+   border: 1px solid black;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+td {
+   padding: 15px 10px;
+}
+
+.buttons {
+   display: flex;
+   
+}
